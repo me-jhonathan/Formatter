@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+    height: auto;
+}
+
+.input-box, .output-box {
+    width: 80%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea, #jsonOutput {
+    flex: 1;
+    /* height: 30vh; */
+}
+
+textarea {
+    width: 100%;
+    height: 250px;
+    font-family: monospace;
+}
+
+#jsonOutput {
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+#formatButton, #flipButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#flipButton {
+    background-color: #ccc;
+}
+
+#flipButton {
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.output-box .header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.output-box h2 {
+    margin: 0;
+    display: inline-block;
+}
+
+#copyButton {
+    padding: 8px 15px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.container.horizontal {
+    flex-direction: row;
+    height: 100vh;
+    align-items: stretch;
+}
+
+.container.horizontal .input-box,
+.container.horizontal .output-box {
+    width: 40%;
+    height: auto;
+}
