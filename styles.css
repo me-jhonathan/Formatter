@@ -48,15 +48,32 @@ textarea {
 }
 
 #flipButton {
-    background-color: #ccc;
-}
-
-#flipButton {
     padding: 10px 20px;
     background-color: #ccc;
     color: white;
     border: none;
     cursor: pointer;
+}
+
+#darkModeButton {
+    padding: 10px 20px; 
+    background-color: #ccc; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    margin-bottom: 10px; 
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white; 
+}
+
+body.dark-mode .input-box,
+body.dark-mode .output-box,
+body.dark-mode textarea {
+    background-color: #333;
+    color: white;
 }
 
 .output-box .header {

@@ -31,3 +31,14 @@ document.getElementById('flipButton').addEventListener('click', function() {
     const container = document.querySelector('.container');
     container.classList.toggle('horizontal'); 
 });
+
+document.getElementById('darkModeButton').addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+
+    const darkModeButton = document.getElementById('darkModeButton');
+    if (darkModeButton.textContent === 'Dark Mode') {
+        darkModeButton.textContent = 'Light Mode';
+    } else {
+        darkModeButton.textContent = 'Dark Mode';
+    }
+});
