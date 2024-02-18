@@ -15,10 +15,15 @@ document.getElementById('copyButton').addEventListener('click', function() {
     const formattedText = document.getElementById('jsonOutput').textContent;
     navigator.clipboard.writeText(formattedText)
         .then(() => {
-            alert('Formatted JSON copied!'); 
+            const copyButton = document.getElementById('copyButton');
+            copyButton.classList.add('rainbow-effect');
+
+            setTimeout(() => {
+                copyButton.classList.remove('rainbow-effect');
+            }, 1000); 
         })
         .catch(error => {
-            alert('Copy failed! Please try again.');
+            alert('Copy failed! Please try again.'); 
         });
 });
 

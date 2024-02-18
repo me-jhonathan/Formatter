@@ -79,6 +79,19 @@ textarea {
     border: none;
     cursor: pointer;
     vertical-align: middle;
+    transition: background-color 0.5s ease;
+}
+
+@keyframes rainbow {
+    0% { background-color: #008CBA; } 
+    25% { background-color: yellow; }
+    50% { background-color: red; }
+    75% { background-color: purple; }
+    100% { background-color: #008CBA; }
+}
+
+#copyButton.rainbow-effect {
+    animation: rainbow 0.5s ease;
 }
 
 .container.horizontal {
